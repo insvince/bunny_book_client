@@ -1,5 +1,15 @@
-const Layout = () => {
-    return <div className="">Layout</div>;
-};
+import Container from './../Components/Container/Container'
+import Sidebar from './../Components/Sidebar/Sidebar'
+import Footer from './../Components/Footer/Footer'
 
-export default Layout;
+function DefaultLayout({ children }) {
+    return (
+        <div>
+            <Sidebar />
+            <Container>{children}</Container>
+            <Footer />
+        </div>
+    )
+}
+
+export default DefaultLayout
