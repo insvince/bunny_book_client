@@ -19,6 +19,7 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
+    margin-left: 300px;
     background-color: var(--background-color);
 }
 
@@ -29,4 +30,14 @@ a {
 
 li {
     list-style-type: none;
+}
+
+::-webkit-scrollbar {
+    background-color: white;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #969696;
+    border-radius: 10px;
 }

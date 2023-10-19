@@ -1,6 +1,6 @@
-import Container from './../Components/Container/Container'
-import Sidebar from './../Components/Sidebar/Sidebar'
-import Footer from './../Components/Footer/Footer'
+import Container from '~/Layouts/Components/Container/Container'
+import Sidebar from '~/Layouts/Components/Sidebar/Sidebar'
+import Footer from '~/Layouts/Components/Footer/Footer'
 
 function DefaultLayout({ children }) {
     return (
