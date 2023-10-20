@@ -3,8 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faTiktok, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faUserCircle } from '@fortawesome/free-regular-svg-icons'
 
-import Button from '~/Layouts/Button/Button'
-import MenuLink from '~/Layouts/MenuLink/MenuLink'
+import Button from '~/Layouts/Components/Button/Button'
+import MenuLink from '~/Layouts/Components/MenuLink/MenuLink'
 import styled from './Sidebar.module.scss'
 
 const cx = classNames.bind(styled)
@@ -16,7 +16,7 @@ const Sidebar = () => {
                 <div className={cx('logo')}>
                     <Button to="/">
                         <img
-                            src="http://localhost/Bunny_Book_Store/public/img/logo.png"
+                            src="http://localhost/bunny_book_store/public/img/logo.png"
                             alt="logo"
                         />
                     </Button>

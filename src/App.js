@@ -20,13 +20,12 @@ function App() {
                         }
 
                         const Page = route.element
-
                         return (
                             <Route
                                 key={index}
                                 path={route.path}
                                 element={
-                                    <Layout>
+                                    <Layout layout={route.layout}>
                                         <Page />
                                     </Layout>
                                 }

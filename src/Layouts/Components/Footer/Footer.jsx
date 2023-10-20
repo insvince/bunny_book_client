@@ -1,48 +1,51 @@
 import classNames from 'classnames/bind'
 import styled from './Footer.module.scss'
-import Button from '~/Layouts/Button/Button'
+import Button from '~/Layouts/Components/Button/Button'
 
 const cx = classNames.bind(styled)
 
-const Footer = () => {
+const Footer = ({ layout }) => {
+    let sideBarLess
+    if (layout) sideBarLess = 'less'
+
     return (
-        <footer>
+        <footer className={cx({ [sideBarLess]: layout })}>
             <div className={cx('footer__top')}>
                 <div className={cx('about__top')}>
                     <div className={cx('title__top')}>Thông Tin</div>
                     <Button
-                        href="http://localhost/Bunny_Book_Store/views/personal/infomation/gioi-thieu.html"
+                        href="http://localhost/bunny_book_store/views/personal/infomation/gioi-thieu.html"
                         children="Giới thiệu"
                     />
                     <Button
-                        href="http://localhost/Bunny_Book_Store/views/personal/infomation/doi-tac.html"
+                        href="http://localhost/bunny_book_store/views/personal/infomation/doi-tac.html"
                         children="Đối tác"
                     />
                 </div>
                 <div className={cx('about__top')}>
                     <div className={cx('title__top')}>Chính sách</div>
                     <Button
-                        href="http://localhost/Bunny_Book_Store/views/personal/policy/doi-hang.html"
+                        href="http://localhost/bunny_book_store/views/personal/policy/doi-hang.html"
                         children=" Chính sách đổi hàng"
                     />
 
                     <Button
-                        href="http://localhost/Bunny_Book_Store/views/personal/policy/bao-mat.html"
+                        href="http://localhost/bunny_book_store/views/personal/policy/bao-mat.html"
                         children=" Chính sách bảo mật"
                     />
                 </div>
                 <div className={cx('about__top')}>
                     <div className={cx('title__top')}>FAQ</div>
                     <Button
-                        href="http://localhost/Bunny_Book_Store/views/personal/fqa/tt-vc.html"
+                        href="http://localhost/bunny_book_store/views/personal/fqa/tt-vc.html"
                         children="Thanh toán và vận chuyển"
                     />
                     <Button
-                        href="http://localhost/Bunny_Book_Store/views/personal/fqa/check-booking.html"
+                        href="http://localhost/bunny_book_store/views/personal/fqa/check-booking.html"
                         children="Kiểm tra thông tin đơn hàng"
                     />
                     <Button
-                        href="http://localhost/Bunny_Book_Store/views/personal/fqa/question.html"
+                        href="http://localhost/bunny_book_store/views/personal/fqa/question.html"
                         children="Câu hỏi thường gặp"
                     />
                 </div>

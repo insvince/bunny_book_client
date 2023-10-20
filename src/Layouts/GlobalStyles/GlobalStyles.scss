@@ -19,7 +19,7 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
-    margin-left: 300px;
+    user-select: none;
     background-color: var(--background-color);
 }
 
@@ -40,4 +40,8 @@ li {
 ::-webkit-scrollbar-thumb {
     background-color: #969696;
     border-radius: 10px;
+}
+.only,
+.less {
+    margin-left: 0;
 }

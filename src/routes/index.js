@@ -21,7 +21,7 @@ const publicPath = [
     {
         path: '/cart',
         element: Cart,
-        layout: ContainerOnly,
+        layout: Sidebarless,
     },
     {
         path: '/login',
