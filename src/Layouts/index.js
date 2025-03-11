@@ -1,6 +1,6 @@
-import Container from '~/Layouts/Components/Container/Container'
-import Sidebar from '~/Layouts/Components/Sidebar/Sidebar'
-import Footer from '~/Layouts/Components/Footer/Footer'
+import Container from '~/Layouts/Components/Container/Container';
+import Sidebar from '~/Layouts/Components/Sidebar/Sidebar';
+import Footer from '~/Layouts/Components/Footer/Footer';
 
 function DefaultLayout({ children }) {
     return (
@@ -9,7 +9,7 @@ function DefaultLayout({ children }) {
             <Container>{children}</Container>
             <Footer />
         </div>
-    )
+    );
 }
 
-export default DefaultLayout
+export default DefaultLayout;

@@ -1,5 +1,5 @@
-import Container from '~/Layouts/Components/Container/Container'
-import Footer from '~/Layouts/Components/Footer/Footer'
+import Container from '~/Layouts/Components/Container/Container';
+import Footer from '~/Layouts/Components/Footer/Footer';
 
 function Layouts({ children }) {
     return (
@@ -7,7 +7,7 @@ function Layouts({ children }) {
             <Container layout>{children}</Container>
             <Footer layout />
         </div>
-    )
+    );
 }
 
-export default Layouts
+export default Layouts;
